@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <style>
+      body {
+        border-style: dashed;
+        border-color: rgb(0, 0, 0);
+        /* shorthand for above property is as follows */
+        /* border: 4px solid rgb(0, 0, 0); */
+        background-color: rgb(143, 168, 171);
+        padding: 20px;
+      }
+      #mainheading {
+        max-width: 1400px;
+        min-width: 300px;
+        /* border-radius:0px 50px 0px 50px;  */
+        padding: 20px 40px 20px 40px;
+        /*         border-radius: 40%; */
+        border-top-left-radius: 50px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 50px;
+        border-width: 8px;
+        border-style: double dashed groove inset;
+        border-color: black;
+        background-color: cornflowerblue;
+        padding: 0px 10px 10px 10px;
+        text-shadow: 7px 6px 3px rgb(212, 255, 0);
+        box-sizing: border-box;
+      }
+      #firstheading {
+        max-width: 1400px;
+        min-width: 300px;
+        border-width: 5px;
+        padding: 20px 40px 20px 40px;
+        border-radius:2px 70px 20px 70px; 
+        border-style: groove outset dashed double;
+        border-color: black;
+        background-color: rgb(34, 110, 15);
+        color: blue;
+        text-shadow: 8px 6px 3px black;
+        font-size: 20px;
+        text-shadow: 7px 6px 3px rgb(65, 0, 0);
+        box-sizing: border-box;
+      }
+      .para {
+        max-width: 1400px;
+        min-width: 300px;
+        border-radius: 10px;
+        padding: 20px 40px 20px 40px;
+        border-top: 4px solid black;
+        border-bottom: 4px dotted rgb(0, 4, 255);
+        border-left: 4px inset rgb(0, 255, 255);
+        border-right: 4px inset rgb(0, 26, 255);
+        background-color: rgb(114, 159, 255);
+        color: rgb(0, 0, 0);
+        text-shadow: 7px 6px 3px rgb(255, 213, 0);
+        box-sizing: border-box;
+      }
+
+      span{
+        max-width: 1400px;
+        min-width: 300px;
+        border-radius: 10px;
+        padding: 20px 40px 20px 40px;
+        border-top: 4px solid black;
+        border-bottom: 4px dotted rgb(0, 4, 255);
+        border-left: 4px inset rgb(0, 255, 255);
+        border-right: 4px inset rgb(0, 26, 255);
+        background-color: rgb(46, 75, 136);
+        color: rgb(0, 0, 0);
+        text-shadow: 7px 6px 3px rgb(2, 88, 96);
+        box-sizing: border-box;
+        overflow: auto;
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 3 types of selectors 
+    1 ID
+    2 Class
+    3 By Tag Name
+-->
+    <h1 id="mainheading">Hey buddies What's up guys 👨‍🌾👨‍🔧</h1>
+    <h3 id="firstheading">MOMO</h3>
+    <p class="para">
+        <span>
+            
+            border-radius:0px 50px 0px 50px; <br>
+            border-top-left-radius: 50px;<br>
+            border-top-right-radius: 0px;<br>
+            border-bottom-left-radius: 0px;<br>
+            border-bottom-right-radius: 50px; <br>
+        </span>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+      repudiandae, illo ea ducimus beatae commodi iure provident, veniam quae
+      corrupti quibusdam quisquam, pariatur rem ex itaque! Vero perspiciatis ad
+      provident. Nobis, voluptatum beatae necessitatibus itaque nesciunt
+      voluptates similique aspernatur sequi, distinctio eaque quo incidunt
+      reiciendis ut corrupti, nostrum nihil dolor.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+      repudiandae, illo ea ducimus beatae commodi iure provident, veniam quae
+      corrupti quibusdam quisquam, pariatur rem ex itaque! Vero perspiciatis ad
+      provident. Nobis, voluptatum beatae necessitatibus itaque nesciunt
+      voluptates similique aspernatur sequi, distinctio eaque quo incidunt
+      reiciendis ut corrupti, nostrum nihil dolor.
+    </p>
+    <h3 id="firstheading">Rice 🥚</h3>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum iste
+      consectetur dicta, sunt deleniti voluptate aspernatur nobis eligendi quos
+      corrupti iure ipsum hic perspiciatis amet esse reprehenderit, officiis,
+      repellendus provident a. Sit, inventore. Iste quo reiciendis quibusdam
+      optio recusandae minus ex eum tempora. Eaque laudantium perferendis
+      voluptates est pariatur nobis.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+      repudiandae, illo ea ducimus beatae commodi iure provident, veniam quae
+      corrupti quibusdam quisquam, pariatur rem ex itaque! Vero perspiciatis ad
+      provident. Nobis, voluptatum beatae necessitatibus itaque nesciunt
+      voluptates similique aspernatur sequi, distinctio eaque quo incidunt
+      reiciendis ut corrupti, nostrum nihil dolor.
+    </p>
+    <h3 id="firstheading">chips 🍿</h3>
+    <p class="para">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam dolore
+      modi error possimus, quam quidem non aliquam! Quis odit praesentium sequi,
+      quasi ad deserunt nesciunt architecto eligendi nobis vel ipsum sint
+      molestiae similique, commodi dolore adipisci eos dolor quod saepe aperiam
+      sed quos. Deserunt deleniti incidunt rerum numquam, error itaque.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+      repudiandae, illo ea ducimus beatae commodi iure provident, veniam quae
+      corrupti quibusdam quisquam, pariatur rem ex itaque! Vero perspiciatis ad
+      provident. Nobis, voluptatum beatae necessitatibus itaque nesciunt
+      voluptates similique aspernatur sequi, distinctio eaque quo incidunt
+      reiciendis ut corrupti, nostrum nihil dolor.
+    </p>
+    <h3 id="firstheading">coke 🍷</h3>
+    <p class="para">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem iusto
+      sint blanditiis provident beatae modi. Mollitia animi facere amet dicta
+      quidem, suscipit eaque officiis ad saepe iusto quae? Ut fugiat quisquam
+      perspiciatis, aperiam quos harum esse sed quia tempora aspernatur? Debitis
+      laboriosam repudiandae dolor nobis, dolores excepturi amet cum facere.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+      repudiandae, illo ea ducimus beatae commodi iure provident, veniam quae
+      corrupti quibusdam quisquam, pariatur rem ex itaque! Vero perspiciatis ad
+      provident. Nobis, voluptatum beatae necessitatibus itaque nesciunt
+      voluptates similique aspernatur sequi, distinctio eaque quo incidunt
+      reiciendis ut corrupti, nostrum nihil dolor.
+    </p>
+  </body>
+</html>
