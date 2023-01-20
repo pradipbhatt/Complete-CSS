@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CSS Transform Property </title>
+	<style>
+
+        span{
+            box-sizing: border-box;
+            display:flex;
+            background-color: rgb(130, 148, 180);
+            padding-top: 20px;
+            border: 5px solid black;
+        }
+	.main {
+		display: grid;
+		padding: 30px;
+        box-sizing: border-box;
+		background-color: green;
+        transform: scale(.5);
+        border: 5px solid black;
+       
+	}
+	
+	.GFG {
+		text-align: center;
+		font-size: 35px;
+		background-color: rgb(201, 218, 126);
+		color: rgb(47, 101, 47);
+        animation: skew1 1s infinite alternate;
+        transform: scaleZ(5) skew(30deg);  
+        box-shadow: 8px 8px 9px black;  
+        border: 5px solid rgb(179, 255, 0);
+        <!-- multiple values are given here -->
+
+       
+        
+	}
+    .div1{
+        display: inline-block;
+        background-color:red;
+        height: 200px;
+        width:200px;
+        padding: 1px;
+        animation: skew1 1s infinite alternate;
+        transform: skew(30deg);
+        box-shadow: 8px 8px 9px black;
+    }
+
+
+    .div2{
+        display: inline-block;
+        background-color:red;
+        height: 200px;
+        width:200px;
+        padding: 1px;
+        animation: skew1 1s infinite alternate;
+        transform: skew(90deg);
+        box-shadow: 8px 8px 9px black;
+    }
+
+
+    @keyframes skew1{
+        0%{
+            transform:skewX(10deg);
+            background-color: rgb(92, 173, 173);
+        }
+        50%{
+            transform:skewX(0deg,20deg);
+        }
+        100%{
+            transform:skewY(-10deg);
+            background-color: rgb(60, 129, 61);
+            color: red;
+        }
+
+
+
+        
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<div class="GFG">Hello learners whats up <br>
+            scale(x, y): It specifies the scale transformation along the X and Y axes. <br>
+scale3d(x, y, z): It specifies the scale transformation along the X, Y, and Z axes.<br>
+scaleX(x): It specifies the scale transformation along the X-axis.<br>
+scaleY(y): It specifies the scale transformation along the Y-axis.<br>
+scaleZ(z): It specifies the scale transformation along the Z-axis.<br>
+<span>
+    Always remember there's no shorthand Property for skew handing an element so you'll need to use both funnctions like first decleared as transform:skew(angle); and then defined by keyframes by @Keyframes{
+        0%{
+            transform:skew(angle,angle);
+        }
+        100%{
+            transform:skew(angle,angle);
+        }
+    } 
+</span>
+        </div>
+
+
+	</div>
+
+<div>
+
+    <!-- skew testing Y-axis box -->
+    <div class="div1">
+       <p> 
+           hello it's me div 1
+           
+        </p>
+    </div>
+
+
+    <!-- skew testing x box -->
+    <div class="div2">
+       <p>
+           hello am div2 
+        </p>
+    </div>
+</div>
+</body>
+</html>
