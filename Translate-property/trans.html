@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Property</title>
+    <style>
+        *{
+            font-size: larger;
+            font-style: normal;
+            font-family: fantasy;
+        }
+        .container{
+            height: 300px;
+            width:300px;
+            background-color:gray;
+            border: 4px solid black;
+            display: flex;
+            text-align: center;
+            <!-- transform: translate(250px,400px); -->
+        }
+
+        .container:hover{
+            height: 300px;
+            width:300px;
+            background-color:rgb(104, 14, 14);
+            display: flex;
+            text-align: center;
+            animation: translate 3s 3 reverse;
+            
+        }
+        @keyframes translate{
+            0%{
+                transform:translate(399px);
+                background-color: rgb(92, 173, 173);
+            }
+            50%{
+                transform:translate(650px);
+                background-color: rgb(35, 176, 0);
+            }
+
+            100%{
+                transform:translate(870px);
+                background-color: rgb(60, 129, 61);
+                color: red;
+            }
+            100%{
+                transform:translate(50px);
+                background-color: rgb(60, 129, 61);
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            hello kitty love you so much..
+        </p>
+    </div>
+</body>
+</html>
