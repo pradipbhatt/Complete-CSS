@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew Property</title>
+    <style>
+        *{
+            margin:0px;
+            padding:.90px;
+        }
+        .main{
+            background-color: rgb(213, 189, 212);
+            border: 3px solid black;
+            margin: 0px;
+            padding:0px;
+            transform: skew(10deg,.90deg);
+        }
+        .para1{
+            background-color: rgb(56, 182, 34);
+            border: 3px solid black;
+            margin: 0px;
+            padding:0px;
+            transform: skewX(-20deg);
+        }
+        .para2{
+            border: 3px solid black;
+            margin: 0px;
+            padding:0px;
+            transform: skewY(3deg);
+            animation: skew 1s infinite reverse;
+            animation-delay: 3s;;
+        }
+        @keyframes skew{
+            0%{
+                transform: skewX(0deg);
+                background-color:rgb(238, 241, 234);
+            }
+            5%{
+                transform: skewX(10deg);
+                background-color:rgba(172, 255, 47, 0.548);
+            }
+
+            75%{
+                transform: skewX(-20deg);
+                background-color:rgba(157, 13, 13, 0.827);
+                color:rgb(12, 233, 0);
+            }
+            100%{
+                transform: skewX(-10deg);
+                background-color:rgba(159, 20, 20, 0.983);
+                color: greenyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="para1">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit dolor atque voluptates eos! Aperiam ipsum nulla atque assumenda repellat fugit!
+                </p>
+            </div>
+            <div class="para2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora molestiae porro amet minus suscipit! Tempore facilis doloribus iure consequuntur natus Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ipsum iusto illo voluptatum repellendus beatae, inventore libero cumque nemo, reiciendis aut voluptate odit repudiandae. Dignissimos quidem beatae, rem qui quas officiis perferendis mollitia vel ad earum expedita, a aspernatur reiciendis? Quae, distinctio corporis praesentium error itaque illum magnam iure ea totam dignissimos similique accusamus at corrupti eligendi veniam sint blanditiis, fuga sit! Molestias id asperiores ex officia praesentium est itaque cumque possimus libero obcaecati? Quibusdam quos voluptate atque excepturi saepe consequuntur suscipit ab, nobis iste enim. Ipsam exercitationem modi consequatur quisquam perferendis earum dolorem beatae consequuntur fuga? Beatae corrupti dolor quidem alias vitae. Aliquid nesciunt, excepturi itaque temporibus officiis eveniet amet consectetur dolorum architecto, natus velit asperiores repellat minus porro cum hic eum deleniti sequi possimus. Velit esse cupiditate fugit voluptate soluta modi numquam! Veritatis quo molestias reprehenderit debitis voluptates incidunt porro voluptatem asperiores dolor iure! Officia tempore et earum dolor, tenetur velit accusantium amet expedita numquam perferendis nisi laborum adipisci pariatur similique repellat illum quisquam explicabo non quae minima ea. Facere, eius deserunt. Distinctio accusamus quibusdam ratione assumenda illum saepe nesciunt, sapiente tempora repellat aliquam! Molestiae nulla repellat nemo inventore, architecto, assumenda sed adipisci consequatur ullam quam recusandae aliquid?
+            </div>
+        </div>
+    </div>
+</body>
+</html>
